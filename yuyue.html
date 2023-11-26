@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <title>咨询预约</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .title {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            color: #666;
+        }
+        input[type="text"], input[type="email"], select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+        }
+        button {
+            background-color: #5cb85c;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="title">咨询预约</h2>
+        <form>
+            <label for="counselor">选择咨询师:</label>
+            <select id="counselor">
+                <option value="counselor1">咨询师 1</option>
+                <option value="counselor2">咨询师 2</option>
+			   <option value="counselor3">咨询师 3</option>
+                <!-- Add more counselors here -->
+            </select>
+
+            <label for="date">日期:</label>
+            <input type="date" id="date" name="date">
+
+            <label for="time">时间:</label>
+            <input type="time" id="time" name="time">
+
+            <label for="name">你的名字:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="email">你的邮件地址:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="notes">特殊要求:</label>
+            <textarea id="notes" name="notes"></textarea>
+
+            <button type="submit">提交</button>
+            <button type="button">取消</button>
+        </form>
+    </div>
+</body>
+</html>
